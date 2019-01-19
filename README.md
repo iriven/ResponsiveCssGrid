@@ -1,4 +1,4 @@
-# IrivenResponsiveCssGrid
+# Iriven ResponsiveCssGrid
 Classe css Responsive pour creation de gabarit de site web
 =============================
 
