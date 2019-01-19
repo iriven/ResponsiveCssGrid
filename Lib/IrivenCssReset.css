@@ -1,12 +1,13 @@
 /* Let's default this puppy out
 -------------------------------------------------------------------------------*/
-html, body, body div, span, object, iframe, h1, h2, h3,
-h4, h5, h6, p, blockquote, pre, abbr, address, cite, a,
-code, del, dfn, em, img, ins, kbd, q, samp, small, strong,
-sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form,
-label, legend, table, caption, tbody, tfoot, thead, tr, th,
-td, article, aside, figure, footer, header, menu, nav, section,
-time, mark, audio, video, details, summary {
+html, body, div, span, object, iframe, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, a, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, 
+sub, sup, var, b, i,dl, dt, dd, ol, ul, li, fieldset, form, 
+label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video{
     margin: 0;
     padding: 0;
     border: 0;
@@ -29,6 +30,7 @@ time, mark, audio, video, details, summary {
  ---------------------------------------------------------------------------------*/
 article, aside, figure, footer, header, nav, section, details,hgroup, summary
 {display: block;}
+
 /**
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
@@ -43,16 +45,18 @@ html {
     -webkit-text-size-adjust: 100%; /* 2 */
     box-sizing: border-box; /* 3 */
     overflow-y: auto; /* 4 */
+    font-size: 100%;
 }
 *,
 *:before,
 *:after {
     box-sizing: inherit;
 }
+
 body {
     line-height:1;
     background-color: #fff;
-	font-size: 100%;
+    font-size: 100%;
     overflow-x: hidden !important;
 	display : table;
 	overflow-y: auto;
@@ -141,6 +145,7 @@ abbr[title], dfn[title] {cursor: help;}
 
 /* we use a lot of ULs that aren't bulleted.
 	don't forget to restore the bullets within content. */
+nav ul {list-style:none; }
 ul {list-style: none;}
 
 blockquote, q {quotes: none;}
@@ -439,5 +444,15 @@ optgroup {
 /* let's clear some floats */
 .clear,.clearfix{clear:both}
 .clear {margin:0;padding:0;width:100%;}
-.clear:after,.clearfix:before,.clearfix:after{content:"\0020";display:block;height:0;font-size:0;clear:both;overflow: hidden;visibility:hidden}
+.clear:after,
+.clearfix:before,
+.clearfix:after{
+	content:"\0020";
+	display:block;
+	height:0;
+	font-size:0;
+	clear:both;
+	overflow: hidden;
+	visibility:hidden
+}
 .clearfix { zoom: 1; }
