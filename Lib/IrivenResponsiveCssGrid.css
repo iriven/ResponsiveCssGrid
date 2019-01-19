@@ -2,6 +2,9 @@
 .page{width: 99%;}
 .no-marging{margin:0;}
 .no-padding{padding:0;}
+.left {float: left !important;}
+.right {float: right !important;}
+
 /*  SECTIONS GROUPING  */
 .sectionGrid {clear:both;padding:0;margin:0;width: 100%;position: relative;zoom:1;/* For IE 6/7 */}
 .sectionGrid:before,.sectionGrid:after{ content:"";display:table;}
@@ -29,18 +32,14 @@
 /*  Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width :576px)
 {
-    .page{width: 98%;}
+    .page{width: 96%;}
 }
 
 /*  Medium devices (tablets, 768px and up) */
-@media only screen and (min-width :768px) and (max-width: 991.99px)
-{
-    .page{width: 95%;}
-    [class^='gridBox']{width: 49.3%;margin:1% 0 1% 1.4%;}
-    [class^='gridBox']:nth-child(2n+1){clear:both;margin-left:0;}
-}
-/* Large devices (desktops, 992px and up) */ 
-@media only screen and (min-width: 992px) 
+/* Large devices (desktops, 992px and up) */
+/*Extra large devices (large desktops, 1200px and up)*/ 
+
+@media only screen and (min-width: 768px) 
 { 
     .page{width: 93.8%;}
     [class^='gridBox']{margin:1% 0 1% 1.4%;}
@@ -123,13 +122,6 @@
     .gridBox2_12 {width:15.5%;}
     .gridBox1_12 {width:7.05%;}
 }
-
-/*Extra large devices (large desktops, 1200px and up)*/ 
-@media only screen and(min-width: 1200px) 
-{
-    .page{width: 92.5%;}
-}
-
 .gridBox2_2,.gridBox3_3,.gridBox4_4,.gridBox5_5,.gridBox6_6,
 .gridBox7_7,.gridBox8_8,.gridBox9_9,.gridBox10_10,
 .gridBox11_11,.gridBox12_12{width:100%;}
