@@ -1,5 +1,4 @@
 .page, .page-fluid{width: 100%; max-width: 100%;margin: 0 auto;position: relative;}
-.page{width: 99%;}
 .no-marging{margin:0;}
 .no-padding{padding:0;}
 .left {float: left !important;}
@@ -9,6 +8,7 @@
 .sectionGrid {clear:both;padding:0;margin:0;width: 100%;position: relative;zoom:1;/* For IE 6/7 */}
 .sectionGrid:before,.sectionGrid:after{ content:"";display:table;}
 .sectionGrid:after{ clear:both;}
+.sectionGrid .sectionGrid { margin: 0 -0.65rem 0 -0.65rem; width: auto;}
 
 /*  COLUMN SETUP  */
 [class^='gridBox']{
@@ -33,22 +33,28 @@
 @media only screen and (min-width :576px)
 {
     .page{width: 96%;}
-}
-
-/*  Medium devices (tablets, 768px and up) */
-/* Large devices (desktops, 992px and up) */
-/*Extra large devices (large desktops, 1200px and up)*/ 
-
-@media only screen and (min-width: 768px) 
-{ 
-    .page{width: 93.8%;}
-    [class^='gridBox']{margin:1% 0 1% 1.4%;}
+    .gridBox1_2, .gridBox2_3, .gridBox1_3{margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF TWO  */
     .gridBox1_2 {width:49.3%;} 
     /*  GRID OF THREE  */
     .gridBox2_3 {width:66.2%;}
     .gridBox1_3 {width:32.4%;} 
+    [class^='gridBox']:not('.gridBox1_2'),
+    [class^='gridBox']:not('.gridBox1_3'),
+    [class^='gridBox']:not('.gridBox2_3'){width:100%;margin:1% 0 1% 0%;clear:both;}
+}
+
+/*  Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) 
+{
+    .page{width: 94.5%;}
+    .gridBox3_4 , .gridBox2_4 , .gridBox1_4 ,
+    .gridBox4_5 , .gridBox3_5 , .gridBox2_5 ,
+    .gridBox1_5, .gridBox5_6, .gridBox4_6,
+    .gridBox3_6, .gridBox2_6,
+    .gridBox1_6 {margin:1% 0 1% 1.4%;}
+    /*  THE GRID  */
     /*  GRID OF FOUR  */
     .gridBox3_4 {width:74.65%;}
     .gridBox2_4 {width:49.3%;}
@@ -64,6 +70,31 @@
     .gridBox3_6 {width:49.3%;}
     .gridBox2_6 {width:32.4%;}
     .gridBox1_6 {width:15.5%;}
+    [class^='gridBox']:not('.gridBox1_2'),
+    [class^='gridBox']:not('.gridBox1_3'),
+    [class^='gridBox']:not('.gridBox2_3'),
+    [class^='gridBox']:not('.gridBox1_4'),
+    [class^='gridBox']:not('.gridBox2_4'),
+    [class^='gridBox']:not('.gridBox3_4'),
+    [class^='gridBox']:not('.gridBox1_5'),
+    [class^='gridBox']:not('.gridBox2_5'),
+    [class^='gridBox']:not('.gridBox3_5'),
+    [class^='gridBox']:not('.gridBox4_5'),
+    [class^='gridBox']:not('.gridBox5_6'),
+    [class^='gridBox']:not('.gridBox4_6'),
+    [class^='gridBox']:not('.gridBox3_6'),
+    [class^='gridBox']:not('.gridBox2_6'),
+    [class^='gridBox']:not('.gridBox1_6'){width:100%;margin:1% 0 1% 0%;clear:both;}
+}
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) 
+{ 
+    .page{width: 93.8%;}
+    .gridBox6_7, .gridBox5_7, .gridBox3_7,
+    .gridBox2_7, .gridBox1_7, .gridBox7_8,
+    .gridBox6_8, .gridBox5_8, .gridBox4_8,
+    .gridBox3_8, .gridBox2_8, .gridBox1_8 {margin:1% 0 1% 1.4%;}
+    /*  THE GRID  */
     /*  GRID OF SEVEN  */
     .gridBox6_7 {width:85.51%;}
     .gridBox5_7 {width:71.02%;}
@@ -79,6 +110,40 @@
     .gridBox3_8 {width:36.62%;}
     .gridBox2_8 {width:23.95%;}
     .gridBox1_8 {width:11.27%;}
+    [class^='gridBox']:not('.gridBox1_2'),
+    [class^='gridBox']:not('.gridBox1_3'),
+    [class^='gridBox']:not('.gridBox2_3'),
+    [class^='gridBox']:not('.gridBox1_4'),
+    [class^='gridBox']:not('.gridBox2_4'),
+    [class^='gridBox']:not('.gridBox3_4'),
+    [class^='gridBox']:not('.gridBox1_5'),
+    [class^='gridBox']:not('.gridBox2_5'),
+    [class^='gridBox']:not('.gridBox3_5'),
+    [class^='gridBox']:not('.gridBox4_5'),
+    [class^='gridBox']:not('.gridBox5_6'),
+    [class^='gridBox']:not('.gridBox4_6'),
+    [class^='gridBox']:not('.gridBox3_6'),
+    [class^='gridBox']:not('.gridBox2_6'),
+    [class^='gridBox']:not('.gridBox1_6'),
+    [class^='gridBox']:not('.gridBox6_7'),
+    [class^='gridBox']:not('.gridBox5_7'),
+    [class^='gridBox']:not('.gridBox4_7'),
+    [class^='gridBox']:not('.gridBox3_7'),
+    [class^='gridBox']:not('.gridBox2_7'),
+    [class^='gridBox']:not('.gridBox1_7'),
+    [class^='gridBox']:not('.gridBox7_8'),
+    [class^='gridBox']:not('.gridBox6_8'),
+    [class^='gridBox']:not('.gridBox5_8'),
+    [class^='gridBox']:not('.gridBox4_8'),
+    [class^='gridBox']:not('.gridBox3_8'),
+    [class^='gridBox']:not('.gridBox2_8'),
+    [class^='gridBox']:not('.gridBox1_8'){width:100%;margin:1% 0 1% 0%;clear:both;}
+}
+/*Extra large devices (large desktops, 1200px and up)*/ 
+@media only screen and (min-width: 1200px) 
+{
+    [class^='gridBox']{margin:1% 0 1% 1.4%;}
+    /*  THE GRID  */
     /*  GRID OF NINE  */
     .gridBox8_9 {width:88.73%;}
     .gridBox7_9 {width:77.46%;}
