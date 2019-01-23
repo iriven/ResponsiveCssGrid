@@ -1,7 +1,7 @@
-.page, .page-fluid{width: 100%; max-width: 100%;margin: 0 auto;position: relative;}
-.page{width: 98.5%;}
-.no-marging{margin:0;}
-.no-padding{padding:0;}
+.pageWrapper, .pageWrapper-fluid{width: 100%; max-width: 100%;margin: 0 auto;position: relative;}
+.pageWrapper{width: 99%;}
+.no-marging{margin:0 !important;}
+.no-padding{padding:0 !important;}
 .left {float: left !important;}
 .right {float: right !important;}
 
@@ -33,7 +33,7 @@
 /*  Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width :576px)
 {
-    .page{width: 96%;}
+    .pageWrapper{width: 96%;}
     .rowItem1_2, .rowItem2_3, .rowItem1_3{margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF TWO  */
@@ -49,7 +49,7 @@
 /*  Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
-    .page{width: 94.5%;}
+    .pageWrapper{width: 94.5%;}
     .rowItem3_4 , .rowItem2_4 , .rowItem1_4 ,
     .rowItem4_5 , .rowItem3_5 , .rowItem2_5 ,
     .rowItem1_5, .rowItem5_6, .rowItem4_6,
@@ -90,7 +90,7 @@
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 { 
-    .page{width: 93.8%;}
+    .pageWrapper{width: 93.8%;}
     .rowItem6_7, .rowItem5_7, .rowItem3_7,
     .rowItem2_7, .rowItem1_7, .rowItem7_8,
     .rowItem6_8, .rowItem5_8, .rowItem4_8,
