@@ -1,17 +1,18 @@
 .page, .page-fluid{width: 100%; max-width: 100%;margin: 0 auto;position: relative;}
+.page{width: 98.5%;}
 .no-marging{margin:0;}
 .no-padding{padding:0;}
 .left {float: left !important;}
 .right {float: right !important;}
 
 /*  SECTIONS GROUPING  */
-.sectionGrid {clear:both;padding:0;margin:0;width: 100%;position: relative;zoom:1;/* For IE 6/7 */}
-.sectionGrid:before,.sectionGrid:after{ content:"";display:table;}
-.sectionGrid:after{ clear:both;}
-.sectionGrid .sectionGrid { margin: 0 -0.65rem 0 -0.65rem; width: auto;}
+.gridRow {clear:both;padding:0;margin:0;width: 100%;position: relative;zoom:1;/* For IE 6/7 */}
+.gridRow:before,.gridRow:after{ content:"";display:table;}
+.gridRow:after{ clear:both;}
+.gridRow .gridRow { margin: 0 -0.65rem 0 -0.65rem; width: auto;}
 
 /*  COLUMN SETUP  */
-[class^='gridBox']{
+[class^='rowItem']{
     display:block;
     float:left;
     margin:1% 0 1% 0;
@@ -27,166 +28,166 @@
     word-break: break-all;
     white-space: normal;
 }
-[class^='gridBox']:first-child{margin-left:0;}
+[class^='rowItem']:first-child{margin-left:0;}
 
 /*  Small devices (landscape phones, 576px and up) */
 @media only screen and (min-width :576px)
 {
     .page{width: 96%;}
-    .gridBox1_2, .gridBox2_3, .gridBox1_3{margin:1% 0 1% 1.4%;}
+    .rowItem1_2, .rowItem2_3, .rowItem1_3{margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF TWO  */
-    .gridBox1_2 {width:49.3%;} 
+    .rowItem1_2 {width:49.3%;} 
     /*  GRID OF THREE  */
-    .gridBox2_3 {width:66.2%;}
-    .gridBox1_3 {width:32.4%;} 
-    [class^='gridBox']:not('.gridBox1_2'),
-    [class^='gridBox']:not('.gridBox1_3'),
-    [class^='gridBox']:not('.gridBox2_3'){width:100%;margin:1% 0 1% 0%;clear:both;}
+    .rowItem2_3 {width:66.2%;}
+    .rowItem1_3 {width:32.4%;} 
+    [class^='rowItem']:not('.rowItem1_2'),
+    [class^='rowItem']:not('.rowItem1_3'),
+    [class^='rowItem']:not('.rowItem2_3'){width:100%;margin:1% 0 1% 0%;clear:both;}
 }
 
 /*  Medium devices (tablets, 768px and up) */
 @media only screen and (min-width: 768px) 
 {
     .page{width: 94.5%;}
-    .gridBox3_4 , .gridBox2_4 , .gridBox1_4 ,
-    .gridBox4_5 , .gridBox3_5 , .gridBox2_5 ,
-    .gridBox1_5, .gridBox5_6, .gridBox4_6,
-    .gridBox3_6, .gridBox2_6,
-    .gridBox1_6 {margin:1% 0 1% 1.4%;}
+    .rowItem3_4 , .rowItem2_4 , .rowItem1_4 ,
+    .rowItem4_5 , .rowItem3_5 , .rowItem2_5 ,
+    .rowItem1_5, .rowItem5_6, .rowItem4_6,
+    .rowItem3_6, .rowItem2_6,
+    .rowItem1_6 {margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF FOUR  */
-    .gridBox3_4 {width:74.65%;}
-    .gridBox2_4 {width:49.3%;}
-    .gridBox1_4 {width:23.95%;}
+    .rowItem3_4 {width:74.65%;}
+    .rowItem2_4 {width:49.3%;}
+    .rowItem1_4 {width:23.95%;}
     /*  GRID OF FIVE  */
-    .gridBox4_5 {width:79.72%;}
-    .gridBox3_5 {width:59.44%;}
-    .gridBox2_5 {width:39.16%;}
-    .gridBox1_5 {width:18.88%;}
+    .rowItem4_5 {width:79.72%;}
+    .rowItem3_5 {width:59.44%;}
+    .rowItem2_5 {width:39.16%;}
+    .rowItem1_5 {width:18.88%;}
     /*  GRID OF SIX  */
-    .gridBox5_6 {width:83.1%;}
-    .gridBox4_6 {width:66.2%;}
-    .gridBox3_6 {width:49.3%;}
-    .gridBox2_6 {width:32.4%;}
-    .gridBox1_6 {width:15.5%;}
-    [class^='gridBox']:not('.gridBox1_2'),
-    [class^='gridBox']:not('.gridBox1_3'),
-    [class^='gridBox']:not('.gridBox2_3'),
-    [class^='gridBox']:not('.gridBox1_4'),
-    [class^='gridBox']:not('.gridBox2_4'),
-    [class^='gridBox']:not('.gridBox3_4'),
-    [class^='gridBox']:not('.gridBox1_5'),
-    [class^='gridBox']:not('.gridBox2_5'),
-    [class^='gridBox']:not('.gridBox3_5'),
-    [class^='gridBox']:not('.gridBox4_5'),
-    [class^='gridBox']:not('.gridBox5_6'),
-    [class^='gridBox']:not('.gridBox4_6'),
-    [class^='gridBox']:not('.gridBox3_6'),
-    [class^='gridBox']:not('.gridBox2_6'),
-    [class^='gridBox']:not('.gridBox1_6'){width:100%;margin:1% 0 1% 0%;clear:both;}
+    .rowItem5_6 {width:83.1%;}
+    .rowItem4_6 {width:66.2%;}
+    .rowItem3_6 {width:49.3%;}
+    .rowItem2_6 {width:32.4%;}
+    .rowItem1_6 {width:15.5%;}
+    [class^='rowItem']:not('.rowItem1_2'),
+    [class^='rowItem']:not('.rowItem1_3'),
+    [class^='rowItem']:not('.rowItem2_3'),
+    [class^='rowItem']:not('.rowItem1_4'),
+    [class^='rowItem']:not('.rowItem2_4'),
+    [class^='rowItem']:not('.rowItem3_4'),
+    [class^='rowItem']:not('.rowItem1_5'),
+    [class^='rowItem']:not('.rowItem2_5'),
+    [class^='rowItem']:not('.rowItem3_5'),
+    [class^='rowItem']:not('.rowItem4_5'),
+    [class^='rowItem']:not('.rowItem5_6'),
+    [class^='rowItem']:not('.rowItem4_6'),
+    [class^='rowItem']:not('.rowItem3_6'),
+    [class^='rowItem']:not('.rowItem2_6'),
+    [class^='rowItem']:not('.rowItem1_6'){width:100%;margin:1% 0 1% 0%;clear:both;}
 }
 /* Large devices (desktops, 992px and up) */
 @media only screen and (min-width: 992px) 
 { 
     .page{width: 93.8%;}
-    .gridBox6_7, .gridBox5_7, .gridBox3_7,
-    .gridBox2_7, .gridBox1_7, .gridBox7_8,
-    .gridBox6_8, .gridBox5_8, .gridBox4_8,
-    .gridBox3_8, .gridBox2_8, .gridBox1_8 {margin:1% 0 1% 1.4%;}
+    .rowItem6_7, .rowItem5_7, .rowItem3_7,
+    .rowItem2_7, .rowItem1_7, .rowItem7_8,
+    .rowItem6_8, .rowItem5_8, .rowItem4_8,
+    .rowItem3_8, .rowItem2_8, .rowItem1_8 {margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF SEVEN  */
-    .gridBox6_7 {width:85.51%;}
-    .gridBox5_7 {width:71.02%;}
-    .gridBox4_7 {width:56.54%;}
-    .gridBox3_7 {width:42.05%;}
-    .gridBox2_7 {width:27.57%;}
-    .gridBox1_7 {width:13.08%;}
+    .rowItem6_7 {width:85.51%;}
+    .rowItem5_7 {width:71.02%;}
+    .rowItem4_7 {width:56.54%;}
+    .rowItem3_7 {width:42.05%;}
+    .rowItem2_7 {width:27.57%;}
+    .rowItem1_7 {width:13.08%;}
     /*  GRID OF EIGHT  */
-    .gridBox7_8 {width:87.32%;}
-    .gridBox6_8 {width:74.65%;}
-    .gridBox5_8 {width:61.97%;}
-    .gridBox4_8 {width:49.3%;}
-    .gridBox3_8 {width:36.62%;}
-    .gridBox2_8 {width:23.95%;}
-    .gridBox1_8 {width:11.27%;}
-    [class^='gridBox']:not('.gridBox1_2'),
-    [class^='gridBox']:not('.gridBox1_3'),
-    [class^='gridBox']:not('.gridBox2_3'),
-    [class^='gridBox']:not('.gridBox1_4'),
-    [class^='gridBox']:not('.gridBox2_4'),
-    [class^='gridBox']:not('.gridBox3_4'),
-    [class^='gridBox']:not('.gridBox1_5'),
-    [class^='gridBox']:not('.gridBox2_5'),
-    [class^='gridBox']:not('.gridBox3_5'),
-    [class^='gridBox']:not('.gridBox4_5'),
-    [class^='gridBox']:not('.gridBox5_6'),
-    [class^='gridBox']:not('.gridBox4_6'),
-    [class^='gridBox']:not('.gridBox3_6'),
-    [class^='gridBox']:not('.gridBox2_6'),
-    [class^='gridBox']:not('.gridBox1_6'),
-    [class^='gridBox']:not('.gridBox6_7'),
-    [class^='gridBox']:not('.gridBox5_7'),
-    [class^='gridBox']:not('.gridBox4_7'),
-    [class^='gridBox']:not('.gridBox3_7'),
-    [class^='gridBox']:not('.gridBox2_7'),
-    [class^='gridBox']:not('.gridBox1_7'),
-    [class^='gridBox']:not('.gridBox7_8'),
-    [class^='gridBox']:not('.gridBox6_8'),
-    [class^='gridBox']:not('.gridBox5_8'),
-    [class^='gridBox']:not('.gridBox4_8'),
-    [class^='gridBox']:not('.gridBox3_8'),
-    [class^='gridBox']:not('.gridBox2_8'),
-    [class^='gridBox']:not('.gridBox1_8'){width:100%;margin:1% 0 1% 0%;clear:both;}
+    .rowItem7_8 {width:87.32%;}
+    .rowItem6_8 {width:74.65%;}
+    .rowItem5_8 {width:61.97%;}
+    .rowItem4_8 {width:49.3%;}
+    .rowItem3_8 {width:36.62%;}
+    .rowItem2_8 {width:23.95%;}
+    .rowItem1_8 {width:11.27%;}
+    [class^='rowItem']:not('.rowItem1_2'),
+    [class^='rowItem']:not('.rowItem1_3'),
+    [class^='rowItem']:not('.rowItem2_3'),
+    [class^='rowItem']:not('.rowItem1_4'),
+    [class^='rowItem']:not('.rowItem2_4'),
+    [class^='rowItem']:not('.rowItem3_4'),
+    [class^='rowItem']:not('.rowItem1_5'),
+    [class^='rowItem']:not('.rowItem2_5'),
+    [class^='rowItem']:not('.rowItem3_5'),
+    [class^='rowItem']:not('.rowItem4_5'),
+    [class^='rowItem']:not('.rowItem5_6'),
+    [class^='rowItem']:not('.rowItem4_6'),
+    [class^='rowItem']:not('.rowItem3_6'),
+    [class^='rowItem']:not('.rowItem2_6'),
+    [class^='rowItem']:not('.rowItem1_6'),
+    [class^='rowItem']:not('.rowItem6_7'),
+    [class^='rowItem']:not('.rowItem5_7'),
+    [class^='rowItem']:not('.rowItem4_7'),
+    [class^='rowItem']:not('.rowItem3_7'),
+    [class^='rowItem']:not('.rowItem2_7'),
+    [class^='rowItem']:not('.rowItem1_7'),
+    [class^='rowItem']:not('.rowItem7_8'),
+    [class^='rowItem']:not('.rowItem6_8'),
+    [class^='rowItem']:not('.rowItem5_8'),
+    [class^='rowItem']:not('.rowItem4_8'),
+    [class^='rowItem']:not('.rowItem3_8'),
+    [class^='rowItem']:not('.rowItem2_8'),
+    [class^='rowItem']:not('.rowItem1_8'){width:100%;margin:1% 0 1% 0%;clear:both;}
 }
 /*Extra large devices (large desktops, 1200px and up)*/ 
 @media only screen and (min-width: 1200px) 
 {
-    [class^='gridBox']{margin:1% 0 1% 1.4%;}
+    [class^='rowItem']{margin:1% 0 1% 1.4%;}
     /*  THE GRID  */
     /*  GRID OF NINE  */
-    .gridBox8_9 {width:88.73%;}
-    .gridBox7_9 {width:77.46%;}
-    .gridBox6_9 {width:66.2%;}
-    .gridBox5_9 {width:54.93%;}
-    .gridBox4_9 {width:43.66%;}
-    .gridBox3_9 {width:32.4%;}
-    .gridBox2_9 {width:21.13%;}
-    .gridBox1_9 {width:9.866%;}
+    .rowItem8_9 {width:88.73%;}
+    .rowItem7_9 {width:77.46%;}
+    .rowItem6_9 {width:66.2%;}
+    .rowItem5_9 {width:54.93%;}
+    .rowItem4_9 {width:43.66%;}
+    .rowItem3_9 {width:32.4%;}
+    .rowItem2_9 {width:21.13%;}
+    .rowItem1_9 {width:9.866%;}
     /*  GRID OF TEN  */
-    .gridBox9_10 {width:89.86%;}
-    .gridBox8_10 {width:79.72%;}
-    .gridBox7_10 {width:69.58%;}
-    .gridBox6_10 {width:59.44%;}
-    .gridBox5_10 {width:49.3%;}
-    .gridBox4_10 {width:39.16%;}
-    .gridBox3_10 {width:29.02%;}
-    .gridBox2_10 {width:18.88%;}
-    .gridBox1_10 {width:8.74%;}
+    .rowItem9_10 {width:89.86%;}
+    .rowItem8_10 {width:79.72%;}
+    .rowItem7_10 {width:69.58%;}
+    .rowItem6_10 {width:59.44%;}
+    .rowItem5_10 {width:49.3%;}
+    .rowItem4_10 {width:39.16%;}
+    .rowItem3_10 {width:29.02%;}
+    .rowItem2_10 {width:18.88%;}
+    .rowItem1_10 {width:8.74%;}
     /*  GRID OF ELEVEN  */
-    .gridBox10_11 {width:90.78%;}
-    .gridBox9_11 {width:81.56%;}
-    .gridBox8_11 {width:72.34%;}
-    .gridBox7_11 {width:63.12%;}
-    .gridBox6_11 {width:53.90%;}
-    .gridBox5_11 {width:44.69%;}
-    .gridBox4_11 {width:35.47%;}
-    .gridBox3_11 {width:26.25%;}
-    .gridBox2_11 {width:17.03%;}
-    .gridBox1_11 {width:7.818%;}
+    .rowItem10_11 {width:90.78%;}
+    .rowItem9_11 {width:81.56%;}
+    .rowItem8_11 {width:72.34%;}
+    .rowItem7_11 {width:63.12%;}
+    .rowItem6_11 {width:53.90%;}
+    .rowItem5_11 {width:44.69%;}
+    .rowItem4_11 {width:35.47%;}
+    .rowItem3_11 {width:26.25%;}
+    .rowItem2_11 {width:17.03%;}
+    .rowItem1_11 {width:7.818%;}
     /*  GRID OF Twelve  */
-    .gridBox11_12 {width:91.55%;}
-    .gridBox10_12 {width:83.1%;}
-    .gridBox9_12 {width:74.65%;}
-    .gridBox8_12 {width:66.2%;}
-    .gridBox7_12 {width:57.75%;}
-    .gridBox6_12 {width:49.3%;}
-    .gridBox5_12 {width:40.85%;}
-    .gridBox4_12 {width:32.4%;}
-    .gridBox3_12 {width:23.95%;}
-    .gridBox2_12 {width:15.5%;}
-    .gridBox1_12 {width:7.05%;}
+    .rowItem11_12 {width:91.55%;}
+    .rowItem10_12 {width:83.1%;}
+    .rowItem9_12 {width:74.65%;}
+    .rowItem8_12 {width:66.2%;}
+    .rowItem7_12 {width:57.75%;}
+    .rowItem6_12 {width:49.3%;}
+    .rowItem5_12 {width:40.85%;}
+    .rowItem4_12 {width:32.4%;}
+    .rowItem3_12 {width:23.95%;}
+    .rowItem2_12 {width:15.5%;}
+    .rowItem1_12 {width:7.05%;}
 }
-.gridBox2_2,.gridBox3_3,.gridBox4_4,.gridBox5_5,.gridBox6_6,
-.gridBox7_7,.gridBox8_8,.gridBox9_9,.gridBox10_10,
-.gridBox11_11,.gridBox12_12{width:100%;}
+.rowItem2_2,.rowItem3_3,.rowItem4_4,.rowItem5_5,.rowItem6_6,
+.rowItem7_7,.rowItem8_8,.rowItem9_9,.rowItem10_10,
+.rowItem11_11,.rowItem12_12{width:100%;}
