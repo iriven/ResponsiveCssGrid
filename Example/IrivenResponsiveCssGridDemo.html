@@ -12,10 +12,11 @@
     <style media="all">
         .gray{min-height: 80px;background-color:#ccc; color: green;}
         .white{min-height: 60px;background-color:#fff;color: #333;}
-	.text-center{text-align:center; padding-top:10px;}
+	.text-center{text-align:center; padding:1em 0;}
     </style>
 </head>
-<body class="page gray">
+<body class="gray">
+    <div class="page">
 <p id="demo"></p>
 <script>
     var w = window.innerWidth
@@ -32,88 +33,87 @@
 
     <!-- Top pannel -->
 
-    <div class="sectionGrid">
-        <div class="gridBox2_6 white"><div class="text-center">social</div></div>
-        <div class="gridBox2_6 white"><div class="text-center">language</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">login</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">search</div></div>
+    <div class="gridRow">
+        <div class="rowItem2_6 white"><p class="text-center">social</p></div>
+        <div class="rowItem2_6 white"><p class="text-center">language</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">login</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">search</p></div>
     </div>
 
     <!-- Top pannel end-->
     <!-- Header -->
 
-    <div class="sectionGrid">
-            <div class="gridBox2_6 white"><div class="text-center">logo</div></div>
-            <div class="gridBox4_6 white"><div class="text-center">banner</div></div>
+    <div class="gridRow">
+            <div class="rowItem2_6 white"><p class="text-center">logo</p></div>
+            <div class="rowItem4_6 white"><p class="text-center">banner</p></div>
     </div>
 
-    <div class="sectionGrid">
-        <div class="gridBox6_6 white">
-            <div class="text-center">
-                <p>
-                    mainmenu
-                </p>
-
-            </div>
-        </div>
+    <div class="gridRow">
+        <div class="rowItem6_6 white"><p class="text-center">mainmenu</p></div>
     </div>
 
     <!-- Header end-->
 <!-- Main-->
 
-    <div class="sectionGrid">
-            <div class="gridBox4_6 white"><div class="text-center">showcase1</div></div>
-            <div class="gridBox2_6 white"><div class="text-center">showcase2</div></div>
+    <div class="gridRow">
+            <div class="rowItem4_6 white"><p class="text-center">showcase1</p></div>
+            <div class="rowItem2_6 white"><p class="text-center">showcase2</p></div>
     </div>
 
 
+    <div class="gridRow">
+            <div class="rowItem1_6 white"><p class="text-center">topleft</p></div>
+            <div class="rowItem2_6 white"><p class="text-center">topcontentleft</p></div>
+            <div class="rowItem2_6 white"><p class="text-center">topcontentright</p></div>
+            <div class="rowItem1_6 white"><p class="text-center">topright</p></div>
+    </div>
+    <div class="gridRow">
+            <div class="rowItem1_6 white"><p class="text-center">left</p></div>
+            <div class="rowItem4_6 white"><p class="text-center">content</p></div>
+            <div class="rowItem1_6 white"><p class="text-center">right</p></div>
+    </div>
+    <div class="gridRow">
+            <div class="rowItem1_6 white"><p class="text-center">downleft</p></div>
+            <div class="rowItem2_6 white"><p class="text-center">downcontentleft</p></div>
+            <div class="rowItem2_6 white"><p class="text-center">downcontentright</p></div>
+            <div class="rowItem1_6 white"><p class="text-center">downright</p></div>
+    </div>
+    <div class="gridRow">
+            <div class="rowItem1_2 white"><p class="text-center">2 column 1</p></div>
+            <div class="rowItem1_2 white"><p class="text-center">2 column 2</p></div>
+    </div>
 
-    <div class="sectionGrid">
-            <div class="gridBox1_6 white"><div class="text-center">topleft</div></div>
-            <div class="gridBox2_6 white"><div class="text-center">topcontentleft</div></div>
-            <div class="gridBox2_6 white"><div class="text-center">topcontentright</div></div>
-            <div class="gridBox1_6 white"><div class="text-center">topright</div></div>
-    </div>
-    <div class="sectionGrid">
-            <div class="gridBox1_6 white"><div class="text-center">left</div></div>
-            <div class="gridBox4_6 white"><div class="text-center">content</div></div>
-            <div class="gridBox1_6 white"><div class="text-center">right</div></div>
-    </div>
-    <div class="sectionGrid">
-            <div class="gridBox1_6 white"><div class="text-center">downleft</div></div>
-            <div class="gridBox2_6 white"><div class="text-center">downcontentleft</div></div>
-            <div class="gridBox2_6 white"><div class="text-center">downcontentright</div></div>
-            <div class="gridBox1_6 white"><div class="text-center">downright</div></div>
+    <div class="gridRow">
+            <div class="rowItem1_4 white"><p class="text-center">4 column 1</p></div>
+            <div class="rowItem1_4 white"><p class="text-center">4 column 2</p></div>
+            <div class="rowItem2_4 white"><p class="text-center">4 column 3</p></div>
     </div>
 
 <!-- Main end-->
 
 <!-- Bottom -->
 
-    <div class="sectionGrid">
-        <div class="gridBox1_6 white"><div class="text-center">topbottomleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">topbottominnerleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">topbottomcenterleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">topbottomcenterright</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">topbottominnerright</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">topbottomright</div></div>
+    <div class="gridRow">
+        <div class="rowItem1_6 white"><p class="text-center">topbottomleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">topbottominnerleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">topbottomcenterleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">topbottomcenterright</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">topbottominnerright</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">topbottomright</p></div>
     </div>
-    <div class="sectionGrid">
-        <div class="gridBox1_6 white"><div class="text-center">downbottomleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">downbottominnerleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">downbottomcenterleft</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">downbottomcenterright</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">downbottominnerright</div></div>
-        <div class="gridBox1_6 white"><div class="text-center">downbottomright</div></div>
+    <div class="gridRow">
+        <div class="rowItem1_6 white"><p class="text-center">downbottomleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">downbottominnerleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">downbottomcenterleft</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">downbottomcenterright</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">downbottominnerright</p></div>
+        <div class="rowItem1_6 white"><p class="text-center">downbottomright</p></div>
     </div>
-    <div class="sectionGrid">
-        <div class="gridBox6_6 white"><div class="text-center">partners</div></div>
+    <div class="gridRow">
+        <div class="rowItem6_6 white"><p class="text-center">partners</p></div>
     </div>
-
 
 <!-- Bottom End -->
-
-
-
+</div>
 </body>
 </html>
