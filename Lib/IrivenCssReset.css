@@ -260,13 +260,19 @@ pre, code, kbd, samp {
  */
 
 table {
+    border: 1px solid #ccc;
     border-collapse: collapse;
     border-spacing: 0;
     font-size: inherit;
     font: 100% sans-serif;
+    margin:0;
+    padding:0;
+    width: 100%;
 }
-th {font-weight: bold; vertical-align: bottom;}
+th {font-weight: bold; vertical-align: bottom;text-transform: uppercase;font-size: inherit;letter-spacing: 1px;}
 td, td img  {font-weight: normal; vertical-align: middle;}
+tr {border: 1px solid #ddd; padding: 5px;}
+th,td {padding: 10px;text-align: center;}
 
 /* scale images in IE7 more attractively */
 .ie7 img {-ms-interpolation-mode: bicubic;}
@@ -293,9 +299,7 @@ input, select {vertical-align: middle;}
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
 
-button {
-    overflow: visible;
-}
+button {overflow: visible;}
 
 /**
  * Address inconsistent `text-transform` inheritance for `button` and `select`.
@@ -466,31 +470,6 @@ optgroup {
 
 /*html {font-size: 14px;}*/
 
-table {
-    border: 1px solid #ccc;
-    width: 100%;
-    margin:0;
-    padding:0;
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-table tr {
-    border: 1px solid #ddd;
-    padding: 5px;
-}
-
-table th, table td {
-    padding: 10px;
-    text-align: center;
-}
-
-table th {
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 1px;
-}
-
 @media screen and (max-width: 600px) {
     table {border: 0; }
     table thead {display: none;}
@@ -505,7 +484,7 @@ table th {
         clear: left;
         width: 100%;
         text-align: right;
-        font-size: 13px;
+        font-size: inherit;
         border-bottom: 1px dotted #ccc;
     }
 
